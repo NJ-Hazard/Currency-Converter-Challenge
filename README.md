@@ -58,12 +58,18 @@ Este proyecto utiliza Gradle Wrapper, por lo que no necesitas tener Gradle insta
 
 ### 3. Ejecutar desde un IDE
 
-También puedes importar el proyecto en tu IDE favorito (IntelliJ IDEA, Eclipse, VS Code):
+También puedes importar el proyecto en tu IDE favorito (IntelliJ IDEA, Eclipse, VS Code, Antigravity en mi caso):
 
 1.  Abre el proyecto seleccionando la carpeta raíz `Currency-Converter-Challenge`.
 2.  Espera a que Gradle sincronice las dependencias.
 3.  Navega a `app/src/main/java/conversormonedas/ConversorApp.java`.
 4.  Ejecuta el método `main`.
+
+### 4. Ejecutar desde la terminal
+
+1. cd app
+2. javac -cp "lib/gson-2.10.1.jar" -d target/classes src/main/java/conversormonedas/ConversorApp.java src/main/java/conversormonedas/Conversor.java
+3. java -cp "lib/gson-2.10.1.jar;target/classes" ConversorApp
 
 ## 📖 Cómo Usar
 
@@ -100,4 +106,4 @@ _____ RESULTADO _____
 Este proyecto utiliza una clave de API gratuita de ExchangeRate-API. Si experimentas problemas con las solicitudes, verifica que la clave en `Conversor.java` sea válida o regístrate en [exchangerate-api.com](https://www.exchangerate-api.com/) para obtener tu propia clave y reemplazarla en el código.
 
 ---
-Desarrollado con 💙 por [Tu Nombre] para el Challenge de Alura.
+Desarrollado con 💙 por [Neil Sebastián Jácome Contreras] para el Challenge de Alura.
